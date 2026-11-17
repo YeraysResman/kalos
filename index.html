@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kalos · Project guide</title>
+<meta name="description" content="Kalos Dwellings website mockups — V1 and V2 review links.">
+<meta name="theme-color" content="#efede9">
+<style>
+  :root{
+    --ink:#231f20;--muted:#76716a;--line:#d1cdc6;--gold:#c2a354;
+    --cream:#f7f4ee;--paper:#fffcf7;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;color:var(--ink);
+    font-family:Poppins,'Century Gothic',Arial,sans-serif;font-size:14px;
+    background:
+      radial-gradient(circle at 12% 8%, #e8d9b655 0%, transparent 42%),
+      linear-gradient(165deg,#f7f4ee 0%,#efede9 46%,#e5dfd3 100%);
+    min-height:100svh;
+  }
+  main{max-width:980px;margin:0 auto;padding:48px 6% 80px}
+  .eyebrow{display:block;margin-bottom:14px;font-size:11px;letter-spacing:2.2px;text-transform:uppercase;color:#8b6c24}
+  h1{font-size:clamp(34px,5vw,56px);letter-spacing:3px;margin:0 0 14px;text-transform:uppercase;font-weight:400}
+  .lead{max-width:58ch;font-size:15px;line-height:1.8;color:var(--muted);margin:0 0 36px}
+  h2{font-size:13px;letter-spacing:2px;text-transform:uppercase;margin:0 0 14px;font-weight:500}
+  .section{margin:0 0 36px}
+  .grid{display:grid;gap:14px}
+  @media(min-width:760px){.grid.two{grid-template-columns:1fr 1fr}}
+  .card{
+    display:grid;gap:8px;padding:20px 22px;border:1px solid var(--line);border-radius:18px;
+    background:#faf8f4cc;text-decoration:none;color:inherit;
+    transition:border-color .2s,background .2s,transform .2s;
+  }
+  .card:hover{border-color:var(--gold);background:#fff;transform:translateY(-1px)}
+  .card .num{font-size:10px;letter-spacing:1.6px;text-transform:uppercase;color:#8b6c24}
+  .card strong{font-weight:500;font-size:15px;letter-spacing:.3px}
+  .card span{font-size:12px;line-height:1.65;color:var(--muted)}
+  .links{display:grid;gap:12px;margin-top:8px}
+  .links a{
+    font-size:13px;line-height:1.5;color:var(--ink);word-break:break-all;
+    border-bottom:1px solid #c2a35466;width:fit-content;text-decoration:none;padding-bottom:2px;
+  }
+  .links a:hover{border-bottom-color:var(--gold);color:#806621}
+  .note{margin-top:28px;font-size:12px;color:var(--muted);line-height:1.7;max-width:62ch}
+</style>
+</head>
+<body>
+<main>
+  <span class="eyebrow">Razz Interactive · Website mockups</span>
+  <h1>Kalos</h1>
+  <p class="lead">Project guide for the Kalos Dwellings website mockups. Open V1 or V2 below. Each version link opens in a new tab so you can keep this guide available.</p>
+
+  <section class="section" aria-labelledby="versions">
+    <h2 id="versions">Versions</h2>
+    <div class="grid two">
+      <a class="card" href="v1/index.html" target="_blank" rel="noreferrer noopener">
+        <span class="num">V1</span>
+        <strong>Baseline prototype</strong>
+        <span>Homepage and booking flow before the V2 search, profile, Property Management, and comment-tool updates.</span>
+      </a>
+      <a class="card" href="v2/index.html" target="_blank" rel="noreferrer noopener">
+        <span class="num">V2</span>
+        <strong>Current prototype</strong>
+        <span>Full V2 experience: homepage, Book Now, Property Profiles, Property Management, lightboxes, and Comment mode.</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="v2-links">
+    <h2 id="v2-links">V2 review links</h2>
+    <div class="links">
+      <a href="v2/v2.html" target="_blank" rel="noreferrer noopener" title="V2 page-by-page guide">V2 page-by-page guide</a>
+      <a href="v2/index.html" target="_blank" rel="noreferrer noopener" title="V2 homepage prototype">V2 homepage prototype</a>
+      <a href="v2/docs/client-change-logs/Kalos-V2-Client-Change-Log.pdf" target="_blank" rel="noreferrer noopener" title="V2 client change-log PDF">V2 client change-log PDF</a>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="v1-links">
+    <h2 id="v1-links">V1 review links</h2>
+    <div class="links">
+      <a href="v1/index.html" target="_blank" rel="noreferrer noopener" title="V1 homepage prototype">V1 homepage prototype</a>
+    </div>
+  </section>
+
+  <p class="note">Share this Kalos index as the starting point for client and team review. Use the V2 page-by-page guide when reviewers should check each screen in order.</p>
+</main>
+</body>
+</html>

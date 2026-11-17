@@ -1,0 +1,42 @@
+---
+description: How to structure new website mockup projects in this repo
+alwaysApply: true
+---
+
+# Project structure for website mockups
+
+This repository holds functional website mockups guided by design. Follow this layout whenever creating a new project.
+
+## New project folder
+
+- Create a **root-level folder** named after the project (kebab-case), e.g. `kalos-dwellings-v2/`.
+- Put all project pages, assets, CSS, and JS **inside that folder** — never scatter a project’s files across the repo root when working in the multi-project layout.
+- Follow established design/system rules and the design guidance for that mockup.
+
+## Project index (summary)
+
+Inside each project folder, include an `index.html` that is the **summary / guide view** for that project:
+
+- Title and short description of the project
+- A clear list of **all important project links** (page-by-page guide, homepage/prototype, PDFs, etc.)
+- Links must open in a new tab with `target="_blank"` and `rel="noreferrer noopener"`
+
+### Link format example
+
+```html
+<a
+  href="https://yeraysgonzalez.github.io/kalos-dwellings-v2/v2.html"
+  rel="noreferrer noopener"
+  title="https://yeraysgonzalez.github.io/kalos-dwellings-v2/v2.html"
+  target="_blank"
+>https://yeraysgonzalez.github.io/kalos-dwellings-v2/v2.html</a>
+```
+
+Prefer the live share URLs when they exist; otherwise use relative paths to pages inside the same project folder (still with `target="_blank"` and `rel="noreferrer noopener"`).
+
+## Checklist for a new project
+
+1. Create `/<project-name>/` at the repo root
+2. Add `/<project-name>/index.html` as the summary with the full link list
+3. Add the mockup pages and assets under that folder
+4. Keep the summary updated when new pages or share links are added
